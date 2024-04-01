@@ -66,7 +66,7 @@ const SignupForm = () => {
 
           <FormField
             control={form.control}
-            name="Username"
+            name="username"
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Username</FormLabel>
@@ -111,11 +111,10 @@ const SignupForm = () => {
 
           <Button type="submit" className="shad-button_primary">
             {isLoading ? (
-              <div className="flex-center gap-2">
-                Loading...
-              </div>
-            ) : "Sign up"
-            }
+              <div className="flex-center gap-2">Loading...</div>
+            ) : (
+              "Sign up"
+            )}
           </Button>
         </form>
       </div>
